@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM - Query Selector</title>
+</head>
+<body>
+
+    <script>
+        .red-color{
+            color: red;
+        }
+    </script>
+    <nav class="block">
+        <p class="paragraph">Welcome to my website</p>
+    </nav>
+    <div class="block">
+        <h4>Hey There, My name is <span id="username" class="red-color">Rishi RiH</span></h4>
+        <p class="paragraph">Here is a code for you</p>
+        <pre><code>console.log('Hey There')</code></pre>
+    </div>
+
+    <script>
+
+        //operation on class named "username"
+        const element=document.getElelementById('username');
+        console.log(element);
+        console.log(element.innerHTML);  //not working as the selected element in uder any html cmd
+        console.log(element.innerText);  //working as the selected element is under any html cmd
+        console.log(element.textContent);  //working as the selected element is under any html cmd
+        element.innerText='xyder';
+
+        element.classList.add('red-color');
+
+        element.classList.remove('red-color'); //removing the class
+
+        console.log(element.parentElement);  //parent element of the selected element
+
+        element.parentElement.style.backgroundColor='black';  //changing the background color of the parent element
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
