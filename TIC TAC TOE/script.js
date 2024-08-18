@@ -32,9 +32,10 @@ function checkWinner() {
     array[7] !== null &&
     array[8] !== null
   ) {
-    document.write("Game is Draw");
+    document.getElementById('result-text').textContent = 'Draw';
+    }
   }
-}
+
 
 function handleClick(el) {
   const id = Number(el.id);
