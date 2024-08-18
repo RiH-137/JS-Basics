@@ -1,0 +1,33 @@
+.col{
+    border: 1px solid powderblue;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: black;
+    color:rgb(45, 208, 0);
+    curson: pointer;            
+    /* convert curson into pointer for that div */
+}
+
+.row{
+    display: flex;
+}
+
+
+.container{
+    margin: 200px;
+    display: flex;
+}
+
+#result-box {
+    /* display: none; Initially hidden */
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+  }

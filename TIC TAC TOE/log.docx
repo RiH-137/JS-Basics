@@ -1,0 +1,49 @@
+Imagine a 3x3 grid. Each cell in this grid is initially empty.
+We can represent this grid using a JavaScript array with 9 elements. 
+Each element will initially hold a null value.
+
+
+let board = [null, null, null,
+            null, null, null,
+            null, null, null];
+
+
+There are two players: X and O. We'll keep track of whose turn it is using a variable.
+Initially, player X starts.
+After each move, we switch the player.
+
+
+
+When a player clicks on an empty cell, we:
+Check if the cell is empty (contains null).
+If empty, we update the corresponding element in the board array with the player's symbol (X or O).
+Update the cell's display to show the symbol.
+
+
+
+
+Checking for a Win
+After each move, we need to check if the current player has won.
+
+There are 8 possible winning combinations (3 rows, 3 columns, 2 diagonals).
+For each combination, check if all three cells contain the same symbol (X or O).
+If any combination matches, the current player wins.
+
+
+
+Checking for a Draw
+If the board is full (no empty cells) and there's no winner, the game is a draw.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
